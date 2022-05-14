@@ -1,0 +1,52 @@
+hour {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.balloon-me {
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 9px;
+    padding: 4px;
+    margin-left: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.balloon-me::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background-color: antiquewhite;
+    position: absolute;
+    display: block;
+    bottom: -3px;
+    left: 6px;
+    border-radius: 2px;    
+}
+
+.balloon-their {
+    box-sizing: border-box;
+    background-color: bisque;
+    border: none;
+    border-radius: 9px;
+    padding: 4px;
+    margin-left: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.balloon-their::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background-color: bisque;
+    position: absolute;
+    display: block;
+    bottom: -3px;
+    right: 6px;
+    border-radius: 2px;   
+}
